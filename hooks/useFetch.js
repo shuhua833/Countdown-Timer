@@ -1,7 +1,7 @@
 import { useState ,useEffect} from "react";
 
-const useFetch = () =>{
-        const [inputValue, setInputValue] = useState("");
+const useCounter = () =>{
+        const [inputValue, setInputValue] = useState(null);
       
       useEffect(()=>{
         inputValue > 0 && setTimeout(() => setInputValue(inputValue - 1), 1000);  
@@ -9,4 +9,4 @@ const useFetch = () =>{
 
     return[inputValue, setInputValue]
 }
-export default useFetch;
+export default useCounter;
